@@ -15,7 +15,7 @@ const port = 3000;
 // OU configuration plus sécurisée pour spécifier des origines précises :
 app.use(
    cors({
-      origin: "https://faker-supabase-express-backend.onrender.com", // Remplacez par l'URL de votre frontend
+      origin: "https://faker-supabase-react-front-d52q.vercel.app/",
       methods: ["GET", "POST", "PUT", "DELETE"],
       allowedHeaders: ["Content-Type"],
    })
