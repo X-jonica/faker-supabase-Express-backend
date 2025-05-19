@@ -5,9 +5,9 @@
    "license": "ISC",
    "author": "henintsoa",
    "type": "commonjs",
-   "main": "app.js",
+   "main": "server.js",
    "scripts": {
-      "start": "nodemon app.js"
+      "start": "nodemon server.js"
    },
    "dependencies": {
       "@faker-js/faker": "^9.8.0",
