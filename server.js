@@ -15,7 +15,10 @@ const port = 3000;
 // OU configuration plus sécurisée pour spécifier des origines précises :
 app.use(
    cors({
-      origin: "https://faker-supabase-react-front.vercel.app",
+      origin: [
+         "http://localhost:5173",
+         "https://faker-supabase-react-front.vercel.app",
+      ],
       methods: ["GET", "POST", "PUT", "DELETE"],
       allowedHeaders: ["Content-Type"],
    })
