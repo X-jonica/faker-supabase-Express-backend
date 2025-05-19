@@ -31,5 +31,5 @@ app.post("/api/personne/faker", insertFakePerson);
 app.delete("/api/personne/:id", deletePersonById);
 
 app.listen(port, () => {
-   console.log(`serveur start in : http://localhost:${port}`);
+   console.log(`serveur start in port: ${port}`);
 });
