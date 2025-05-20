@@ -15,7 +15,6 @@ const port = 3000;
 // OU configuration plus sécurisée pour spécifier des origines précises :
 const allowedOrigins = [
    "http://localhost:5173",
-   "https://faker-supabase-react-front-d52q.vercel.app",
    "https://faker-supabase-react-front.vercel.app",
 ];
 
