@@ -16,11 +16,14 @@ const port = 3000;
 const allowedOrigins = [
    "http://localhost:5173",
    "https://faker-supabase-react-front.vercel.app",
+   "https://faker-supabase-react-front-git-main-x-jonicas-projects.vercel.app/",
+   "https://faker-supabase-react-front-a11gh3z57-x-jonicas-projects.vercel.app/",
 ];
 
 app.use(
    cors({
       origin: function (origin, callback) {
+         console.log("Requête CORS depuis :", origin); // clg l'origine
          if (!origin || allowedOrigins.includes(origin)) {
             callback(null, true);
          } else {
