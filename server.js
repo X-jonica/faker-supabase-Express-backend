@@ -16,22 +16,22 @@ const port = 3000;
 const allowedOrigins = [
    "http://localhost:5173",
    "https://faker-supabase-react-front-d52q.vercel.app",
- ];
- 
- app.use(
+   "https://faker-supabase-react-front.vercel.app",
+];
+
+app.use(
    cors({
-     origin: function (origin, callback) {
-       if (!origin || allowedOrigins.includes(origin)) {
-         callback(null, true);
-       } else {
-         callback(new Error("Not allowed by CORS"));
-       }
-     },
-     methods: ["GET", "POST", "PUT", "DELETE"],
-     allowedHeaders: ["Content-Type"],
+      origin: function (origin, callback) {
+         if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+         } else {
+            callback(new Error("Not allowed by CORS"));
+         }
+      },
+      methods: ["GET", "POST", "PUT", "DELETE"],
+      allowedHeaders: ["Content-Type"],
    })
- );
- 
+);
 
 // Utilisation de morgan pour voir les reqettes executer depuis le server
 app.use(morgan("dev")).use(bodyParser.json());
